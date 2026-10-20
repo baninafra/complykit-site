@@ -1,0 +1,40 @@
+/* ComplyKit: tokens del manual de marca. Fuente única de colores, tipografía, espacios y radios. */
+:root {
+  --surface: #ffffff;
+  --surface-raised: #f4f4f5;
+  --ink: #111111;
+  --ink-muted: #52525b;
+  --hairline: #e4e4e7;
+  --control-border: #71717a;
+  --signal: #facc15;
+  --on-signal: #111111;
+  --action: #111111;
+  --on-action: #facc15;
+  --focus: #111111;
+  --sev-critical: #b91c1c;
+  --sev-serious: #c2410c;
+  --sev-moderate: #facc15;
+  --sev-minor: #52525b;
+  --sev-pass: #15803d;
+  --on-sev: #ffffff;
+  --text-critical: #b91c1c;
+
+  --font-sans: Manrope, "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;
+  --space-6: 24px; --space-8: 32px; --space-12: 48px;
+  --radius-sm: 4px; --radius-md: 8px; --radius-none: 0;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --surface: #111111; --surface-raised: #1c1c1e; --ink: #ffffff; --ink-muted: #a1a1aa;
+    --hairline: #2e2e32; --control-border: #8e8e96; --action: #facc15; --on-action: #111111;
+    --focus: #facc15; --text-critical: #f87171; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --surface: #111111; --surface-raised: #1c1c1e; --ink: #ffffff; --ink-muted: #a1a1aa;
+  --hairline: #2e2e32; --control-border: #8e8e96; --action: #facc15; --on-action: #111111;
+  --focus: #facc15; --text-critical: #f87171; color-scheme: dark;
+}
